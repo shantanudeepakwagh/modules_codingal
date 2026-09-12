@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Fork Information</title>
+  <link href="F3.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+  <fieldset>
+    <legend><b>Enter Fork Prices</b></legend>
+
+    <form
+      oninput="x.value=(parseFloat(f1.value)+parseFloat(f2.value)+parseFloat(f3.value))/3">
+
+      <label>Name</label><br>
+      <input type="text" id="name" placeholder="Enter Name">
+      <br><br>
+
+      <label>Enter Fork Prices</label><br>
+
+      <select name="Fork1" id="fork1">
+        <option value="Dinner Fork">Dinner Fork</option>
+        <option value="Salad Fork">Salad Fork</option>
+        <option value="Dessert Fork">Dessert Fork</option>
+      </select>
+
+      <input type="number" id="f1" name="f1">
+      <br><br>
+
+      <select name="Fork2" id="fork2">
+        <option value="Dinner Fork">Dinner Fork</option>
+        <option value="Salad Fork">Salad Fork</option>
+        <option value="Dessert Fork">Dessert Fork</option>
+      </select>
+
+      <input type="number" id="f2" name="f2">
+      <br><br>
+
+      <select name="Fork3" id="fork3">
+        <option value="Dinner Fork">Dinner Fork</option>
+        <option value="Salad Fork">Salad Fork</option>
+        <option value="Dessert Fork">Dessert Fork</option>
+      </select>
+
+      <input type="number" id="f3" name="f3">
+      <br><br>
+
+      Average Price:
+      <output name="x" for="f1 f2 f3"></output>
+
+    </form>
+  </fieldset>
+
+</body>
+
+</html>
